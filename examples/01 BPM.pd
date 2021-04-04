@@ -1,0 +1,19 @@
+#N canvas 475 213 342 271 12;
+#X obj 67 167 metro_bpm;
+#X obj 67 146 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 127 96 loadbang;
+#X msg 127 120 120;
+#X floatatom 127 144 5 0 0 0 - - -;
+#X text 174 145 <-- Change BPM;
+#X obj 67 193 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 88 191 <-- bang for a beat;
+#X text 244 32 Omkar Bhatt;
+#X text 237 13 Metro by BPM;
+#X text 251 51 04/04/2021;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 1;
