@@ -1,0 +1,34 @@
+#N canvas 235 74 401 443 12;
+#X floatatom 145 175 5 20 500 2 BPM - -;
+#X obj 71 203 metro_bpm, f 11;
+#X obj 200 101 loadbang;
+#X msg 200 156 120;
+#X obj 71 167 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 71 303 time_signature;
+#X obj 71 345 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 211 270 <-- Custom Time Signature;
+#X text 190 291 2 numbers separated by space;
+#X obj 118 374 hradio 15 1 0 11 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X text 294 372 11 8;
+#X text 12 143 start beat;
+#X text 308 27 Omkar Bhatt;
+#X text 301 8 Metro by BPM;
+#X text 315 46 04/04/2021;
+#X text 106 409 Only works for multiples of quater notes;
+#X obj 166 246 loadbang;
+#X obj 200 128 delay 500;
+#X msg 166 270 11 8;
+#X connect 0 0 1 1;
+#X connect 1 0 5 0;
+#X connect 1 1 5 1;
+#X connect 2 0 17 0;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 5 1 9 0;
+#X connect 16 0 18 0;
+#X connect 17 0 3 0;
+#X connect 18 0 5 2;

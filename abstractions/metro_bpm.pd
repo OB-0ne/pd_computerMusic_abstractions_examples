@@ -1,4 +1,4 @@
-#N canvas 182 174 419 464 12;
+#N canvas 723 160 419 464 12;
 #X msg 122 261 tempo \$1 permin;
 #X obj 122 287 metro;
 #X obj 71 191 inlet;
@@ -21,6 +21,7 @@ calls the same instrumnent's similar samples to avoid monotone.;
 #X connect 0 0 1 0;
 #X connect 1 0 8 0;
 #X connect 2 0 1 0;
+#X connect 2 0 8 0;
 #X connect 3 0 0 0;
 #X connect 3 0 12 0;
 #X connect 12 0 13 0;
